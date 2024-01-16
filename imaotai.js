@@ -1,4 +1,9 @@
 /******************************************
+ * @name i茅台预约
+ * @channel https://t.me/yqc_123/
+ * @feedback https://t.me/yqc_777/
+ * @author 𝒀𝒖𝒉𝒆𝒏𝒈
+ * @update 20231002
  * @version 1.0.0
  ******************************************
 ###详细见同目录README
@@ -24,7 +29,7 @@ var maotai = new Maotai()
 var isClearShopDir = $.getdata('imaotai__config__clearshopdir') || false // 是否清理店铺字典
 var province = $.getdata('imaotai__config__province') || '' // 省份
 var city = $.getdata('imaotai__config__city') || '' // 城市
-var itemCode = $.getdata('imaotai__config__itemcode') || '10941' // 预约项
+var itemCode = $.getdata('imaotai__config__itemcode') || '10213' // 预约项
 var location = $.getdata('imaotai__config__location') || '' // 地址经纬度
 var address = $.getdata('imaotai__config__address') || '' // 详细地址
 var shopid = $.getdata('imaotai__config__shopid') || '' // 商铺id
@@ -33,10 +38,10 @@ var Message = '' // 消息内容
 // -----------------------------------------------------------------------------------------
 // TODO: 后续支持多品预约
 var itemMap = {
-    10941: '53%vol 500ml贵州茅台酒（甲辰龙年）',
-    10942: '53%vol 375ml×2贵州茅台酒（甲辰龙年）',
-    10056: '53%vol 500ml茅台1935',
-    2478: '53%vol 500ml贵州茅台酒（珍品）'
+    10213: '贵州茅台酒（癸卯兔年）',
+    2478: '贵州茅台酒（珍品）',
+    10214: '贵州茅台酒（癸卯兔年）x2',
+    10056: '53%vol 500ml 茅台1935'
 }
 !(async () => {
     // 抓包
